@@ -1,0 +1,322 @@
+/* My Customized Font */
+@font-face { 
+    font-family: 'Brown Regular'; 
+    src: url(assets/fonts/lineto-brown-pro-regular.ttf); 
+    font-weight: normal; 
+    font-size: medium;
+    }
+
+@font-face { 
+    font-family: 'Brown Light'; 
+    src: url(assets/fonts/lineto-brown-pro-light.ttf); 
+    font-weight: normal; 
+    font-size: medium;
+    }
+
+@font-face { 
+    font-family: 'Brown Bold'; 
+    src: url(assets/fonts/lineto-brown-pro-bold.ttf); 
+    font-weight: normal; 
+    font-size: medium;
+    }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}    
+
+body {
+	font-family: 'Brown Bold';
+    background: #FFFFFF;
+}
+
+body a {
+    text-decoration: none;
+    color: #000000;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
+
+hr.top-rule {
+	margin-top: 15px;
+    background: #E5E5E5;
+    height: 1px;
+    border: none;
+}
+
+.Top-menu-bar ul {
+    display: flex;
+    justify-content: block;
+    margin-left: 890px;
+    text-align: center;
+}
+
+.Top-menu-bar li {
+    display: block;
+    border-right: 2px solid #000000;
+    padding: 0 30px;
+    margin-top: 20px;
+    list-style-type: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.Top-menu-bar li:nth-child(3) {
+    border-right: none;
+}
+
+/* Main Header Styles */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 80px 69px;
+    padding: 0;
+    align-items: center;
+}
+
+.main-navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+    font-family: 'Brown Bold';
+}
+
+.main-navigation li{
+    list-style: none;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.main-navigation li:nth-child(6){
+    background: #EF6D1D;
+    border-radius: 80px;
+    color: #FFFFFF;
+}
+
+.main-navigation li:nth-child(7){
+    background: #296a6e;
+    border-radius: 73px;
+    margin-left: 12px;
+    width: 80px;
+}
+
+/* Site Body Styles */
+
+.site-main {
+    margin-left: 45px;
+}
+
+h1.entry-title {
+    display: inline-block;
+    color: #000000;
+}
+.entry-content {
+    /* display: flex; */
+}
+
+
+.post-edit-link {
+    display: none;
+}
+
+.site-footer
+{
+  /*margin-top: -100px;*/
+  height: 300px;
+  background-color:#123234;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block;
+}
+.footer-links a
+{
+  color:#FFFFFF
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .Follow-Us
+{
+  text-align:center;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.5;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook:hover {
+  background: #3b5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram:hover {
+  background: #55ACEE;
+  color: white;
+}
+
+/* youtube */
+.fa-youtube:hover {
+  background: #55ACEE;
+  color: white;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  margin-top: -100px;
+  color: #FFFFFF;
+}
+
+.social{
+  justify-content: center;
+}
+
+#footer-logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 40px 0px 40px 0px;
+  margin-top: 60px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5) 0,
+    rgba(12, 76, 145, 0.5) 50%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  background-size: 400% 400%;
+  box-shadow: rgb(38 57 77) 0px 20px 30px -10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: footerlogo 15s ease-in-out infinite;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  opacity: 50;
+}
+
+.act {
+     text-align: center;
+     width: 100%;
+     overflow: hidden;
+     background color: #0B2B2D;
+ }
+
+ <style>
+body {
+  background-image: url('screenshot.png')  repeat 0 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+.banner::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .7;
+  z-index: 0;
+}
+.banner{
+  position: relative;
+}
+
+.banner > *{
+  z-index: 10;
+  position: relative;
+  color: whitesmoke;
+}
+
+.banner{
+  background-color: #000;
+  /*background-image: url("https://pixabay.com/photos/computer-screen-coding-1209641");*/
+  padding: 20vh 0;
+  background-size: cover;
+  text-align: center;
+}
+.button {
+  background-color: #EF6D1D; /* Green */
+  border: none;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0.15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px ;
+}
